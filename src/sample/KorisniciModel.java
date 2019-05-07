@@ -42,7 +42,7 @@ public class KorisniciModel {
     void napuni (){
         korisnik.add(new Korisnik( "Vedran" , "Ljubovic" , " vljubovic1@etf.unsa.ba" , "vljubovic1", "password"));
         korisnik.add(new Korisnik( "Tarik" , "Sijarcic" , " tsijarcic1@etf.unsa.ba" , "tsijarcic", "passw"));
-        korisnik.add(new Korisnik( "Emina" , "Mlivo" , " emlivo1@etf.unsa.ba" , "emlivo", "sifra"));
+        korisnik.add(new Korisnik( "Nadja" , "Pasalic" , " npasalic1@etf.unsa.ba" , "npasalic1", "sifra"));
     }
 
 
