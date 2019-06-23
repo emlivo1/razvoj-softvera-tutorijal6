@@ -1,31 +1,28 @@
+
 package sample;
 
-import  javafx.collections.ObservableList ;
-import org.junit.jupiter.api.Assertions;
-import  org.junit.jupiter.api.BeforeAll ;
-import  org.junit.jupiter.api.Test ;
-import static  org.junit.jupiter.api.Assertions. * ;
+import javafx.collections.ObservableList;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
-        class  KorisniciModelTest {
+import static org.junit.jupiter.api.Assertions.*;
 
-        private  static  KorisniciModel model =  null ;
+class KorisniciModelTest {
 
-@BeforeAll
-static  void  setup () {
-        model =  new   KorisniciModel ();
-        model . napuni ();
-
-        }
-
-@Test
-    void  newKorisnik () {
-
-            ObservableList < Korisnik > n = model . getKorisnik ();
-
-        n . add ( new Korisnik( " Ilma " , " Kulovac " , " ikulovac1@etf.unsa.ba " , " ikulovac1 " , " ilmich "));
-        Assertions.assertEquals ( 4 , n . size ());
-        }
+    private static KorisniciModel model = null;
 
 
+    @BeforeAll
+    static void setup() {
+        model = new KorisniciModel();
+        model.napuni();
+    }
 
-        }
+    @Test
+    void newKorisnik() {
+        ObservableList<Korisnik> novi = model.getKorisnik();
+        novi.add(new Korisnik("semso", "semsic", "mail", "asdas", "sadas"));
+        assertEquals(5, model.getKorisnik().size());
+    }
+
+}
